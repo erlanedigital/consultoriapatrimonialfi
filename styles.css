@@ -31,22 +31,39 @@ h1, h2, h3, .font-serif {
   font-family: 'Fraunces', Georgia, serif;
 }
 
-/* Espaçamento generoso e nobre para todos os títulos serifados */
+/* Espaçamento generoso e escala tipográfica nobre para todos os títulos serifados */
 h1, .h1 {
-  line-height: 1.28 !important;
+  font-size: clamp(38px, 5.5vw, 74px) !important;
+  line-height: 1.2 !important;
 }
 
 h2, .h2 {
-  line-height: 1.38 !important;
+  font-size: clamp(32px, 4.4vw, 58px) !important;
+  line-height: 1.28 !important;
 }
 
 h3, .h3 {
-  line-height: 1.42 !important;
+  font-size: clamp(22px, 2.6vw, 30px) !important;
+  line-height: 1.35 !important;
 }
 
 /* ==========================================================================
    ALINHAMENTO E TIPOGRAFIA DE ALTÍSSIMO PADRÃO (DOCUMENTO MESTRE)
    ========================================================================== */
+
+/* Prevenção Absoluta de Palavras Órfãs e Linhas Desbalanceadas */
+h1, h2, h3, h4, h5, h6,
+.section-subtitle,
+.section-header p,
+p.text-center,
+.text-center p,
+.eyebrow {
+  text-wrap: balance !important;
+}
+
+p, span, a, li, article p {
+  text-wrap: pretty;
+}
 
 /* 1. Alinhamento estritamente centralizado para cabeçalhos, títulos e subtítulos de seções */
 .text-center,
@@ -60,6 +77,7 @@ h3.text-center,
 span.text-center {
   text-align: center !important;
   text-align-last: center !important;
+  text-wrap: balance !important;
 }
 
 /* Subtítulos de Seção com Leitura Generosa, Clara e Aumentada */
@@ -97,10 +115,18 @@ p.text-justify,
   text-justify: inter-word !important;
   -webkit-text-align-last: left !important;
   text-align-last: left !important;
+  text-wrap: normal !important;
   hyphens: auto;
   -webkit-hyphens: auto;
-  font-size: clamp(15px, 1.4vw, 17px) !important;
-  line-height: 1.7 !important;
+  font-size: clamp(16px, 1.5vw, 18px) !important;
+  line-height: 1.75 !important;
+}
+
+/* Garante leitura clara e contraste nos cards escuros */
+article.bg-\[\#5A1220\] p,
+.bg-\[\#5A1220\] p.text-justify,
+.bg-\[\#5A1220\] article p {
+  color: rgba(255, 255, 255, 0.88) !important;
 }
 
 .text-left, p.text-left {
