@@ -152,140 +152,129 @@
     </div>
   </nav>
 
-  <!-- ==================== 3. HERO SECTION CENTRALIZADO ==================== -->
-  <section class="relative overflow-hidden pt-12 pb-20 sm:pt-16 sm:pb-24">
+    <!-- ==================== 2. SEÇÃO HERO (LAYOUT SOLICITADO: 2 COLUNAS) ==================== -->
+  <section id="topo" class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-22">
     <!-- Linha decorativa dourada de topo -->
     <div class="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-[#8A6E3E] via-[#C9A86A] to-[#8A6E3E]"></div>
     
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12 grid gap-10 lg:grid-cols-12 lg:items-center">
       
-      <!-- Bloco de Texto Centralizado do Hero -->
-      <div class="text-center max-w-4xl mx-auto space-y-6">
+      <!-- Coluna Esquerda: Texto Principal & CTAs (7 cols) -->
+      <div class="lg:col-span-7 space-y-6">
         
-        <!-- Eyebrow Centralizado -->
-        <div class="flex items-center justify-center">
-          <div class="inline-flex items-center gap-2 rounded-full bg-[#5A1220] px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#E4C98E] border border-[#C9A86A]/40 shadow-sm text-center">
-            <span class="text-[#C9A86A]">✦</span> CONSULTORIA PATRIMONIAL • SEU FILHO AOS 18 ANOS
-          </div>
-        </div>
-
-        <!-- H1 Centralizado -->
-        <h1 id="hero-title-main" class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.22] text-[#5A1220] text-center" style="line-height: 1.22 !important; text-align: center !important; text-align-last: center !important;">
-          Seu filho com 18 anos, com<br>
-          dinheiro para seu primeiro AP<br>
-          ou seu carro.
+        <h1 id="hero-title-main" class="font-serif text-4xl sm:text-6xl lg:text-[66px] font-bold leading-[1.08] tracking-tight text-[#5A1220]">
+          Seu filho com 18 anos,<br>
+          garantido, com <span class="italic text-[#8A6E3E]">seu patrimônio trabalhando por ele.</span>
         </h1>
 
-        <!-- Subtítulo Centralizado -->
-        <p id="hero-subtitle-main" class="text-base sm:text-lg lg:text-xl leading-relaxed text-[#6B5A5E] max-w-3xl mx-auto text-center font-normal" style="text-align: center !important; text-align-last: center !important; text-wrap: balance !important;">
-          Um plano para você construir hoje, com uma parcela que cabe na sua renda, para quando seu filho fizer 18 anos ele já ter seu valor para escolher: seu primeiro AP ou seu carro.
+        <p id="hero-subtitle-main" class="text-base sm:text-lg lg:text-xl text-[#6B5A5E] leading-relaxed max-w-2xl font-normal">
+          Planejamento com consórcio para você construir patrimônio, proteger o poder de compra e entregar a chave do primeiro apartamento ou carro na maioridade do seu filho — sem juros, 100% online e com estratégia de investimento sob medida.
         </p>
 
-        <!-- Badges de Autoridade Centralizados -->
-        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
-          <div class="flex items-center gap-2 rounded-full bg-white border border-[#C9A86A]/50 px-4 py-1.5 text-xs font-bold text-[#5A1220] shadow-sm">
-            <span class="text-[#8A6E3E]">✓</span>
-            <span>Sem Juros de Financiamento</span>
-          </div>
-          <div class="flex items-center gap-2 rounded-full bg-white border border-[#C9A86A]/50 px-4 py-1.5 text-xs font-bold text-[#5A1220] shadow-sm">
-            <span class="text-[#8A6E3E]">✓</span>
-            <span>Fiscalizado pelo Banco Central</span>
-          </div>
-          <div class="flex items-center gap-2 rounded-full bg-white border border-[#C9A86A]/50 px-4 py-1.5 text-xs font-bold text-[#5A1220] shadow-sm">
-            <span class="text-[#8A6E3E]">✓</span>
-            <span>Parcela que Cabe na Renda</span>
-          </div>
-          <div class="flex items-center gap-2 rounded-full bg-white border border-[#C9A86A]/50 px-4 py-1.5 text-xs font-bold text-[#5A1220] shadow-sm">
-            <span class="text-[#8A6E3E]">✓</span>
-            <span>Atendimento Humanizado</span>
-          </div>
-        </div>
-
-        <!-- Botões de Ação Centralizados -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-3">
-          <a href="https://wa.me/5538997373140?text=Ol%C3%A1%20Erlane!%20Quero%20meu%20diagn%C3%B3stico%20gratuito%20para%20o%20futuro%20do%20meu%20filho%20aos%2018%20anos." 
+        <!-- Botões de Ação Principal (Lado a Lado como no Print) -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+          <a href="https://wa.me/5538997373140?text=Ol%C3%A1%20Erlane!%20Quero%20meu%20diagn%C3%B3stico%20gratuito%20para%20o%20futuro%20do%20meu%20filho." 
              target="_blank" rel="noopener noreferrer"
-             class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-full bg-[#5A1220] px-8 py-4 text-sm sm:text-base font-bold text-white shadow-md hover:bg-[#6E1A2B] hover:shadow-lg transition hover:-translate-y-0.5">
-            <svg class="w-5 h-5 fill-current text-[#C9A86A]" viewBox="0 0 24 24">
-              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/>
+             class="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#C9A86A] px-7 py-4 text-sm sm:text-base font-bold text-[#5A1220] shadow-md hover:bg-[#E4C98E] transition-all hover:scale-105">
+            <span>Quero meu diagnóstico gratuito</span>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span>Quero Meu Diagnóstico Gratuito</span>
           </a>
 
-          <a href="#como-funciona" 
-             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border border-[#5A1220]/25 bg-white px-7 py-4 text-sm sm:text-base font-bold text-[#5A1220] hover:bg-[#FAF6EF] shadow-sm transition">
-            <span>Ver Como Funciona</span>
+          <a href="#simulador" 
+             class="inline-flex items-center justify-center gap-2 rounded-full border border-[#5A1220]/25 bg-white px-7 py-4 text-sm sm:text-base font-bold text-[#5A1220] hover:bg-[#FAF6EF] shadow-sm transition">
+            <span>Simular minha parcela e receber meu diagnóstico</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
             </svg>
           </a>
         </div>
       </div>
 
-      <!-- Vitrine Dupla do Hero: Card Nobre e Foto de Família (Corpos de Texto JUSTIFICADOS) -->
-      <div class="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-        
-        <!-- Card Nobre: Seu Plano em Foco (7 cols) -->
-        <article class="lg:col-span-7 flex flex-col justify-between rounded-[32px] bg-[#5A1220] p-7 sm:p-10 text-white shadow-xl border border-[#C9A86A]/40 relative overflow-hidden">
-          <div class="space-y-6">
-            <div class="flex items-center justify-between">
-              <span class="eyebrow bg-[#C9A86A] text-[#5A1220]">SEU PLANO EM FOCO</span>
-              <span class="text-xs font-bold uppercase tracking-widest text-[#E4C98E]">Planejamento Familiar</span>
-            </div>
+      <!-- Coluna Direita: Card Nobre Vinho "SEU PLANO EM FOCO" (5 cols) -->
+      <div class="lg:col-span-5 relative">
+        <div class="card-shadow relative overflow-hidden rounded-[32px] bg-[#5A1220] p-7 sm:p-9 text-white shadow-2xl border border-[#C9A86A]/40">
+          
+          <!-- Cabeçalho do Card: Eyebrow + Ícone de Chave Dourada -->
+          <div class="flex items-center justify-between border-b border-white/10 pb-4">
+            <span class="text-xs font-extrabold uppercase tracking-[0.22em] text-[#C9A86A]">
+              SEU PLANO EM FOCO
+            </span>
+            <span class="text-lg text-[#C9A86A]" title="A Chave do Futuro">🗝️</span>
+          </div>
 
-            <h2 class="font-serif text-2xl sm:text-3xl font-bold leading-tight text-white">
-              Transforme a sua renda de hoje na liberdade do seu filho amanhã.
-            </h2>
+          <!-- Título Nobre do Card -->
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold leading-tight text-white mt-4 mb-6">
+            Transforme sua renda de hoje no futuro do seu filho.
+          </h2>
 
-            <p class="text-sm sm:text-base leading-relaxed text-white/80 text-justify" style="text-align: justify !important; text-justify: inter-word !important; text-align-last: left !important;">
-              Você não precisa esperar o seu filho atingir a maioridade para começar a se preocupar com faculdade, moradia ou primeiro carro. O planejamento antecipado dilui o investimento em parcelas leves e multiplica o poder de compra da família sem juros de financiamento.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div class="rounded-2xl bg-white/10 p-5 border border-white/15">
-                <span class="text-2xl block mb-2">🏠</span>
-                <h3 class="font-serif text-base font-bold text-white mb-1.5">1º Imóvel Próprio</h3>
-                <p class="text-xs leading-relaxed text-white/75 text-justify" style="text-align: justify !important; text-justify: inter-word !important; text-align-last: left !important;">
-                  Crédito imobiliário para compra de apartamento ou casa própria quitada, sem dívida bancária de 30 anos.
-                </p>
+          <!-- 3 Linhas com Divisores Horizontais -->
+          <div class="space-y-4">
+            
+            <!-- Linha 1: Objetivo Claro -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-[#C9A86A] text-lg border border-white/10">
+                📅
               </div>
-
-              <div class="rounded-2xl bg-white/10 p-5 border border-white/15">
-                <span class="text-2xl block mb-2">🚗</span>
-                <h3 class="font-serif text-base font-bold text-white mb-1.5">1º Carro Zero KM</h3>
-                <p class="text-xs leading-relaxed text-white/75 text-justify" style="text-align: justify !important; text-justify: inter-word !important; text-align-last: left !important;">
-                  Autonomia de locomoção e conquista da carteira de habilitação com veículo quitado em nome dele.
-                </p>
+              <div class="space-y-0.5">
+                <h3 class="text-sm font-bold text-white">Objetivo claro</h3>
+                <p class="text-xs leading-relaxed text-white/75">O primeiro AP ou carro do seu filho aos 18 anos.</p>
               </div>
             </div>
+
+            <div class="border-t border-white/10"></div>
+
+            <!-- Linha 2: Parcela que Cabe -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-[#C9A86A] text-lg border border-white/10">
+                💰
+              </div>
+              <div class="space-y-0.5">
+                <h3 class="text-sm font-bold text-white">Parcela que cabe</h3>
+                <p class="text-xs leading-relaxed text-white/75">Seu plano desenhado para a sua renda atual.</p>
+              </div>
+            </div>
+
+            <div class="border-t border-white/10"></div>
+
+            <!-- Linha 3: Carta de Crédito -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-[#C9A86A] text-lg border border-white/10">
+                🏠
+              </div>
+              <div class="space-y-0.5">
+                <h3 class="text-sm font-bold text-white">Carta de crédito</h3>
+                <p class="text-xs leading-relaxed text-white/75">Para usar quando você for contemplada ou aos 18 anos.</p>
+              </div>
+            </div>
+
           </div>
 
-          <div class="mt-8 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-white/80">
-            <span>✓ Contrato 100% digital e seguro</span>
-            <span class="font-bold text-[#E4C98E]">Assessoria Direta com a Erlane</span>
-          </div>
-        </article>
-
-        <!-- Fotografia Exclusiva de Família e Futuro (5 cols) -->
-        <div class="lg:col-span-5 flex flex-col">
-          <div class="relative h-full overflow-hidden rounded-[32px] border-2 border-[#C9A86A]/45 shadow-2xl bg-white">
-            <img src="assets/familia-futuro.webp" 
-                 alt="Família planejando o futuro e patrimônio do filho com tranquilidade" 
-                 class="h-full w-full object-cover min-h-[380px] transition-transform duration-500 hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-            <div class="absolute bottom-6 inset-x-6 text-white text-center">
-              <p class="font-serif text-lg font-bold">A Conquista da Maioridade</p>
-              <p class="text-xs text-white/80 mt-1">Seu filho começando a vida adulta com vantagem patrimonial real.</p>
+          <!-- Rodapé do Card: Badges Pílula e Selo Digital Seguro -->
+          <div class="mt-6 pt-5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2.5">
+            <div class="flex flex-wrap gap-2">
+              <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold text-white/90">
+                Atendimento humanizado
+              </span>
+              <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold text-white/90">
+                Direto com a consultora
+              </span>
+            </div>
+            
+            <div class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-[11px] font-bold text-[#5A1220] shadow-sm">
+              <span class="text-xs">🛡️</span>
+              <span>100% digital e seguro</span>
             </div>
           </div>
+
         </div>
-
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== 4. SEÇÃO DE VÍDEO EXCLUSIVO ==================== -->
+  <!-- ==================== 3. SEÇÃO DE VÍDEO EXCLUSIVO ==================== -->
   <section id="video-secao" class="py-20 lg:py-24 bg-white border-y border-[#C9A86A]/20">
     <div class="max-w-5xl w-full mx-auto px-4 sm:px-8 text-center space-y-4">
       
