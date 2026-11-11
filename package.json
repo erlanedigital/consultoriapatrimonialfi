@@ -1,0 +1,22 @@
+{
+  "name": "consultoriapatrimonialfi",
+  "version": "1.0.0",
+  "description": "Erlane Mota - Consultoria Patrimonial | Seu Filho aos 18 Anos com Futuro Garantido",
+  "type": "module",
+  "scripts": {
+    "build": "node -e \"const fs=require('fs'); if(!fs.existsSync('dist')) fs.mkdirSync('dist', {recursive:true}); if(!fs.existsSync('dist/assets')) fs.mkdirSync('dist/assets', {recursive:true}); ['index.html','styles.css','script.js','favicon.svg','_headers'].forEach(f => { if(fs.existsSync(f)) fs.copyFileSync(f, 'dist/' + f); }); if(fs.existsSync('assets')) { fs.readdirSync('assets').forEach(f => fs.copyFileSync('assets/' + f, 'dist/assets/' + f)); } console.log('Build completed to dist/');\"",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "keywords": [
+    "consorcio",
+    "patrimonio",
+    "filhos",
+    "18-anos",
+    "primeiro-imovel",
+    "primeiro-carro",
+    "erlane-mota",
+    "engenharia-financeira"
+  ],
+  "author": "Erlane Mota",
+  "license": "ISC"
+}

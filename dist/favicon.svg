@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="wineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6E1A2B"/>
+      <stop offset="100%" stop-color="#3D0C16"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4C98E"/>
+      <stop offset="50%" stop-color="#C9A86A"/>
+      <stop offset="100%" stop-color="#9C7738"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Shield / Rounded Rect -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#wineGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <!-- Decorative Heritage Crown / Roof Shape -->
+  <path d="M22 18 L32 12 L42 18 L39 22 L32 17 L25 22 Z" fill="url(#goldGrad)"/>
+  <!-- Monogram EM -->
+  <text x="32" y="44" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">EM</text>
+  <!-- Subtitle FI -->
+  <circle cx="32" cy="51" r="2" fill="#E4C98E"/>
+</svg>

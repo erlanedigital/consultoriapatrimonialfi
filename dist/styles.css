@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600;1,9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --wine: #5A1220;
+  --wine-light: #6E1A2B;
+  --wine-dark: #3D0C16;
+  --gold: #C9A86A;
+  --gold-light: #E4C98E;
+  --gold-dark: #8A6E3E;
+  --cream: #FAF6EF;
+  --cream-light: #FFFDF9;
+  --cream-dark: #F1E9DA;
+  --ink: #2B1A1E;
+  --muted: #6B5A5E;
+  --border: #E8DCC8;
+  --line: rgba(90, 18, 32, 0.12);
+  --line-gold: rgba(201, 168, 106, 0.35);
+  --surface: #FAF6EF;
+  --card: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+  background-color: var(--cream);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* Card shadows e hover no padrão ouro de consultoria patrimonial */
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(90, 18, 32, 0.06);
+  transition: all 0.25s ease-in-out;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 14px 34px -4px rgba(90, 18, 32, 0.14);
+  transform: translateY(-2px);
+}
+
+/* Blindagem absoluta de cliques e modais inativos */
+.hidden {
+  display: none !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
+
+/* Eyebrow badge padrão */
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+/* Sub-barra de navegação com rolagem horizontal suave */
+.subnav-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.subnav-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom Video Wrap */
+.video-container {
+  position: relative;
+  background-color: #1a060a;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgba(90, 18, 32, 0.3);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 520px;
+  object-fit: cover;
+}
+
+/* Transições fluidas */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Toast de notificações */
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  background: var(--wine-dark);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  border: 1px solid var(--gold);
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  animation: toastIn 0.3s ease-out;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
